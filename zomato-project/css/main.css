@@ -1,13 +1,21 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+
+/* rules */
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   background-color: #fbfbfb;
 }
 .main-section {
-  display: none;
+  /* display: none; */
   background-color: lightblue;
   height: 400px;
   /* gradient (applying muti-color)  */
@@ -126,21 +134,34 @@ align-item: horizontal  (left-right)
 }
 
 .section-list-item {
+  margin-bottom: 1rem;
   display: flex;
   background-color: white;
-  width: 30%;
+  width: 32%;
   height: 160px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 8px 0 red;
+  /* x-axis (left-right), y-axis (top-bottom), blur, scale (increasing size) , color */
+  transition: transform 0.5s;
 }
+
+.section-list-item:hover {
+  box-shadow: 0px 0px 8px 0 green;
+  transform: scale(1.05);
+}
+
 /*  width: 30%; === 100% */
 .section-list-item-image {
   width: 45%;
   height: 100%;
   background-color: red;
+  overflow: hidden;
 }
 .section-list-item-image > img {
-  height: 100%;
-  width: 100%;
+  height: 150%;
+  width: 150%;
+  transform: translateX(-60px);
+  /* move element, rotate element, scale */
 }
 .section-list-item-title {
   width: 55%;
@@ -160,5 +181,10 @@ align-item: horizontal  (left-right)
 
 .section-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+
+/* font */
+/* overflow */
+/* zoom effect on hover by using transform */
