@@ -1,0 +1,29 @@
+.flex-child {
+  height: 200px;
+  width: 200px;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-brown {
+  background-color: brown;
+}
+.bg-magenta {
+  background-color: magenta;
+}
+
+.flex-parent {
+  background-color: lightsalmon;
+  height: 500px;
+  display: flex;
+  flex-direction: row; /* row(default horizontal), columns (vertical) */
+  justify-content: space-evenly; /* left right center* /* default horizontal*/
+  /* flex-start (default) , flex-end, center , 
+  space-between , space-around, space-evenly */
+
+  align-items: flex-end; /* top center bottom*/ /* default vertical*/
+  /*stretch, flex-start, flex-end , center  */
+}

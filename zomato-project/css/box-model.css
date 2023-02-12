@@ -1,0 +1,29 @@
+/* common box property */
+
+/* 
+width => for H size,
+height => for V size,
+margin => create space surrounding to element,
+padding => create space inside of element,
+border => create a surrounding line to element */
+
+/*  reset all element */
+/* universal selector */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* padding: 0; */
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: lightcoral;
+  padding: 20px; /* left right top bottom*/
+
+  border-style: solid;
+  border-width: 10px;
+  border-color: green;
+
+  margin: 50px;
+}

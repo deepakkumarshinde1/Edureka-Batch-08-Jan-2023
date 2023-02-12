@@ -1,0 +1,48 @@
+h1 {
+  background-color: red;
+  color: yellow;
+}
+
+#h1-id {
+  background-color: green;
+}
+
+.h1-class {
+  background-color: brown;
+}
+
+/* selectors
+    element selector => h1 1%
+    id selector => #idName 5% #(hash)
+    class selector => .className 94% .(dot)
+*/
+
+#bg-brown-id {
+  background-color: brown;
+}
+
+.bg-red {
+  background-color: green;
+}
+
+p {
+  background-color: red;
+}
+
+/* element  << class <<  id selector */
+.btn {
+  background-color: green;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+#admin-btn {
+  background-color: red;
+  color: green;
+}

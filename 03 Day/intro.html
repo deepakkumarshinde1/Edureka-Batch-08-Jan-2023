@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to HTML page</title>
+  </head>
+  <body>
+    <!-- forms, layout element, video, audio -->
+    <!-- form send a data from browser to server -->
+    <!--  form 
+            input
+            label
+            select
+              option
+            textarea
+            datalist
+
+            required => to make a inout mandatory
+     -->
+    <!-- <a href="tel:867594746">call me </a>
+     <a href="mailto:">sdkjfkh</a> -->
+    <h1>User Login</h1>
+    <form>
+      <div>
+        <label>Username</label>
+        <input type="text" placeholder="Enter username" />
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" />
+      </div>
+      <button>Submit</button>
+    </form>
+
+    <hr />
+
+    <h2>User Registration</h2>
+
+    <form>
+      <div>
+        <label for="userfullname">Full Name</label>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          id="userfullname"
+          autofocus
+        />
+      </div>
+      <div>
+        <label for="">Mobile *</label>
+        <input
+          required
+          type="number"
+          placeholder="mobile number"
+          maxlength="10"
+          minlength="10"
+        />
+      </div>
+      <div>
+        <label for="">Email ID *</label>
+        <input type="email" placeholder="Enter Email Id" required />
+      </div>
+      <div>
+        <label for="">DOB</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label for="">Gender</label>
+        <div>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+
+          <input type="radio" name="gender" id="famale" />
+          <label for="famale">Female</label>
+
+          <input type="radio" name="gender" id="other" />
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <div>
+        <label for="">City</label>
+        <select name="" id="">
+          <option>--select city--</option>
+          <option>mumbai</option>
+          <option>pune</option>
+          <option>surat</option>
+          <option>jaipur</option>
+          <option>chennai</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Address</label>
+        <textarea rows="2" cols="30" placeholder="Enter Address"></textarea>
+      </div>
+      <div>
+        <label for="">Pin Code</label>
+        <input type="number" placeholder="Enter 6 digit pincode" />
+      </div>
+      <div>
+        <label for="">Technical Skills</label>
+        <div>
+          <label for="">HTML</label>
+          <input type="checkbox" checked disabled />
+
+          <label for="">CSS</label>
+          <input type="checkbox" checked disabled />
+
+          <label for="">Javascript</label>
+          <input type="checkbox" checked />
+        </div>
+      </div>
+      <input type="time" />
+      <input type="file" multiple />
+
+      <!-- <input type="submit">
+      <input type="reset"> -->
+
+      <button type="reset">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
+<!-- 
+      name*
+      mobile number*
+      email id*
+      date of birth*
+      gender*
+      city
+        mumbai
+        pune
+        surat
+        jaipur
+        chennai
+      pincode
+      address
+      skills
+     -->
+
+<!-- html4 , XHTML , html5 -->

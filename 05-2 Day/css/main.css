@@ -1,0 +1,21 @@
+.flex-parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-child {
+  height: 200px;
+  width: 200px;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-brown {
+  background-color: brown;
+}
+.bg-magenta {
+  background-color: magenta;
+}

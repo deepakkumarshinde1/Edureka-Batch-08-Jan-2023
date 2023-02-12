@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to HTML page</title>
+  </head>
+  <body>
+    <!-- button
+        navigation
+        list
+        img
+        table
+        form
+      -->
+    <!-- 
+      table
+        thead => table header
+        tbody => table body
+        tfoot => table footer
+          tr => table row
+            th => table heading
+            td => table data
+
+        if i want to marg multiple columns of single row => colspan
+        if i want to marg multiple rows of single column => rowspan
+     -->
+    <table border="1" width="100%" cellspacing="0" cellpadding="10">
+      <thead>
+        <tr>
+          <th colspan="2">header-1</th>
+          <!-- <th>header-1</th> -->
+          <th>header-3</th>
+          <th>header-4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>data-1-row-1</td>
+          <td>data-2-row-1</td>
+          <td>data-3-row-1</td>
+          <td rowspan="2">Deepakkumar</td>
+        </tr>
+        <tr>
+          <td>data-1-row-2</td>
+          <td>data-2-row-2</td>
+          <td>data-3-row-2</td>
+          <!-- <td>Deepakkumar</td> -->
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">
+            <small> Note: this is a html table use for experiment</small>
+          </td>
+          <!-- <td></td>
+          <td></td>
+          <td></td> -->
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+<!-- html4 , XHTML , html5 -->

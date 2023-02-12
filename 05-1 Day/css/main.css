@@ -1,0 +1,25 @@
+.perfect-square {
+  width: 200px;
+  height: 200px;
+}
+.inline-block {
+  display: inline-block;
+}
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+/* display  => inline-block, flex
+layout management   */
+
+/*  display: inline; don't support height and width 
+    display: block; don't support  next to each other
+*/
+
+/* flexbox */
+
+/* inline-block + float , gird , flex (flexible) */
