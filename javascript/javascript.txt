@@ -1,0 +1,21 @@
+// JavaScript => small code
+// 1992 - 1994 (netscape)
+// 2000 - 2009 (node js) AngularJS (javascript) // oop  ECMA Script => ES5 <= today
+// 2015 ( All class, Many new features added)(AngularIO (typescript) , 
+// react (Typescript/Javascript) , Veu)
+
+//---- Basic JAVA
+
+// console
+// variables
+// operators
+// conditional statement
+// loop
+// array
+// object
+// math
+// date
+// string
+// DOM
+
+// Advance Javascript
