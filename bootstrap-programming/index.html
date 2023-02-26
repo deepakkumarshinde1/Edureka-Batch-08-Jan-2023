@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css" />
+  </head>
+  <body>
+    <!-- border 
+      border-0 (0px) .......... border-5 (5px)
+
+      flex ==> .d-flex
+      .flex-row .flex-column (flex-direction)
+      .justify-content-start  (justify-content:flex-start)
+      .justify-content-end    (justify-content:flex-end)
+      .justify-content-between (justify-content:space-between)
+      .justify-content-evenly
+      .justify-content-center
+      .justify-content-around
+
+      .align-items-center (align-items:center)
+      .align-items-start 
+      .align-items-end 
+
+
+      margin
+        0 => 0px , 1 => 4px , 2 => 8px , 3 => 16px , 4 => 32px , 5 => 48px
+        m-0 ... m-5 (left-top-right-bottom)
+        mt-0 ... mt-5 (top)
+        mb-0 ... mb-5 (bottom)
+        ms-0 ... ms-5 (left) (s => start)
+        me-0 ... me-5 (right) (e => end)
+        my-0 ... my-5 (top-bottom) (y=> y-axis)
+        mx-0 ... mx-5 (left-right) (x=> x-axis)
+        m-auto 
+
+      padding
+        0 => 0px , 1 => 4px , 2 => 8px , 3 => 16px , 4 => 32px , 5 => 48px
+        p-0 ... p-5 (left-top-right-bottom)
+        pt-0 ... pt-5 (top)
+        pb-0 ... pb-5 (bottom)
+        ps-0 ... ps-5 (left)
+        pe-0 ... pe-5 (right)
+        py-0 ... py-5 (top-bottom)
+        px-0 ... px-5 (left-right)
+    -->
+    <main class="container-fluid">
+      <section class="row justify-content-center">
+        <section class="col-4 border border-1 border-success p-4 mt-4">
+          <h2 class="text-center">User Login</h2>
+          <div class="mb-3">
+            <label for="" class="form-label">User Name</label>
+            <input
+              type="text"
+              placeholder="Enter User Name"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Password</label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              class="form-control"
+            />
+          </div>
+          <div class="text-center">
+            <button class="btn btn-success px-5">Login</button>
+            <button class="btn btn-danger px-5">Reset</button>
+          </div>
+        </section>
+        <section class="col-4 border border-1 border-success p-4 mt-4">
+          <h2 class="text-center">User Login 2</h2>
+          <div class="mb-3 input-group">
+            <span class="input-group-text">@</span>
+            <input
+              type="text"
+              placeholder="Enter User Name"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3 input-group">
+            <span class="input-group-text bg-success text-white px-3">#</span>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              class="form-control"
+            />
+          </div>
+          <div class="text-center">
+            <button class="btn btn-success px-5">Login</button>
+            <button class="btn btn-danger px-5">Reset</button>
+          </div>
+        </section>
+        <section class="col-4 border border-1 border-success p-4 mt-4">
+          <h2 class="text-center">User Login 3</h2>
+          <div class="mb-3 form-floating">
+            <input
+              type="text"
+              placeholder="Enter User Name"
+              class="form-control"
+            />
+            <label for="">Enter User Name</label>
+          </div>
+          <div class="mb-3 form-floating">
+            <input
+              type="password"
+              placeholder="Enter Password"
+              class="form-control"
+            />
+            <label for="">Enter Password</label>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-success px-5">Login</button>
+            <button class="btn btn-danger px-5">Reset</button>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

@@ -142,12 +142,14 @@ align-item: horizontal  (left-right)
   /* border: 1px solid black; */
   box-shadow: 0px 0px 8px 0 red;
   /* x-axis (left-right), y-axis (top-bottom), blur, scale (increasing size) , color */
-  transition: transform 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s; /* animation on hover*/
 }
+
+/* :hover => pseudo class */
 
 .section-list-item:hover {
   box-shadow: 0px 0px 8px 0 green;
-  transform: scale(1.05);
+  transform: scale(1.05); /*zoom in*/
 }
 
 /*  width: 30%; === 100% */
@@ -179,7 +181,7 @@ align-item: horizontal  (left-right)
   color: #8c96ab;
 }
 
-.section-list {
+.section-list {r
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

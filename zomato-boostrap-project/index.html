@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Quick Search Page</title>
+    <!-- enable responsive ness in our website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- fs-4  => font size  fs-1 ... fs-5 -->
+    <div class="container-fluid">
+      <!-- header start -->
+      <section class="row bg-danger py-lg-3 py-2">
+        <header
+          class="col-12 col-lg-11 m-auto text-white d-flex justify-content-between"
+        >
+          <p class="brand mb-0 fw-bold fs-4">e!</p>
+          <div>
+            <button class="btn text-white">Login</button>
+            <button class="btn btn-outline-light">Create An Account</button>
+          </div>
+        </header>
+      </section>
+      <!-- header end -->
+      <!-- 2nd section -->
+      <section class="row edu-text-gray">
+        <section class="col-11 m-auto">
+          <p class="text-blue h3 mt-3 fw-bold">Breakfast Places in Mumbai</p>
+          <section class="row gap-3">
+            <!-- filter start -->
+            <section class="col-lg-3 col-12 border border-1 p-2 px-4 bg-white">
+              <p class="text-blue fw-bold mb-0 d-lg-none">Filter/Sort</p>
+              <div class="d-none d-lg-block">
+                <p class="text-blue fw-bold mb-2">Filter</p>
+                <div class="mb-3">
+                  <label for="" class="form-label">Select Location</label>
+                  <select name="" id="" class="form-select">
+                    <option value="">Location</option>
+                    <option value="">City-1</option>
+                    <option value="">City-2</option>
+                    <option value="">City-3</option>
+                    <option value="">City-4</option>
+                    <option value="">City-5</option>
+                  </select>
+                </div>
+                <hr class="border border-1 border-primary-subtle mb-1" />
+                <p class="mb-2 fw-bold">Cuisine</p>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input"
+                  />
+                  <label for="" class="form-check-label">North Indian</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input"
+                  />
+                  <label for="" class="form-check-label">North Indian</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input"
+                    checked
+                  />
+                  <label for="" class="form-check-label">North Indian</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input"
+                    checked
+                  />
+                  <label for="" class="form-check-label">North Indian</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input"
+                  />
+                  <label for="" class="form-check-label">North Indian</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input"
+                  />
+                  <label for="" class="text-mute">North Indian</label>
+                </div>
+                <!-- cost for 2 -->
+                <hr class="border border-1 border-primary-subtle mb-2" />
+                <p class="mb-2 fw-bold">Cost For Two</p>
+                <div class="form-check">
+                  <input type="radio" name="" id="" class="form-check-input" />
+                  <label for="" class="form-check-label text-muted"
+                    >Less than 500</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="" id="" class="form-check-input" />
+                  <label for="" class="form-check-label text-muted"
+                    >500 to 1000</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="" id="" class="form-check-input" />
+                  <label for="" class="form-check-label text-muted"
+                    >1000 to 1500</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="" id="" class="form-check-input" />
+                  <label for="" class="form-check-label text-muted"
+                    >1500 to 2000</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="" id="" class="form-check-input" />
+                  <label for="" class="form-check-label text-muted"
+                    >2000+</label
+                  >
+                </div>
+                <!-- sort -->
+                <hr class="border border-1 border-primary-subtle mb-2" />
+                <p class="mb-2 fw-bold">Sort</p>
+                <div class="form-check">
+                  <input type="radio" name="" id="" class="form-check-input" />
+                  <label for="" class="form-check-label text-muted"
+                    >Price Low To High</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="" id="" class="form-check-input" />
+                  <label for="" class="form-check-label text-muted"
+                    >Price High To Low</label
+                  >
+                </div>
+              </div>
+            </section>
+            <!-- filter end -->
+            <!-- restaurant start -->
+            <section class="col-lg-8 col-12">
+              <section class="row">
+                <article class="col-12 border border-1 bg-white mb-2 p-4">
+                  <div class="d-flex gap-2 gap-lg-4">
+                    <img
+                      src="./images/restaurant-1.png"
+                      alt=""
+                      class="edu-restaurant-image"
+                    />
+                    <div>
+                      <p class="h2 fw-bold text-blue">KFC</p>
+                      <p class="text-success mb-2">
+                        START 4.5 <span class="fw-bold">(5k)</span>
+                      </p>
+                      <p class="text-muted">
+                        <span>Location</span> Shop 1, Plot D, Samruddhi Complex,
+                        Chincholi
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="d-flex gap-lg-4">
+                    <div>
+                      <p class="mb-1">CUISINES:</p>
+                      <p class="mb-1">COST FOR TWO:</p>
+                    </div>
+                    <div class="fw-bold">
+                      <p class="mb-1">North Indian, South Indian</p>
+                      <p class="mb-1">Rs. 700</p>
+                    </div>
+                  </div>
+                </article>
+                <article class="col-12 border border-1 bg-white mb-2 p-4">
+                  <div class="d-flex gap-lg-4 gap-2">
+                    <img
+                      src="./images/restaurant-2.png"
+                      alt=""
+                      class="edu-restaurant-image"
+                    />
+                    <div>
+                      <p class="h2 fw-bold text-blue">Green Cafe</p>
+                      <p class="text-success mb-2">
+                        START 4.0 <span class="fw-bold">(2.5k)</span>
+                      </p>
+                      <p class="text-muted">
+                        <span>Location</span> Shop 1, Plot D, Samruddhi Complex,
+                        Chincholi
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="d-flex gap-lg-4">
+                    <div>
+                      <p class="mb-1">CUISINES:</p>
+                      <p class="mb-1">COST FOR TWO:</p>
+                    </div>
+                    <div class="fw-bold">
+                      <p class="mb-1">Fast Food, South Indian</p>
+                      <p class="mb-1">Rs. 100</p>
+                    </div>
+                  </div>
+                </article>
+              </section>
+              <section class="row">
+                <div class="col-12 d-flex justify-content-center">
+                  <ul class="list-unstyled d-flex page">
+                    <li>&lt;</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li class="active">3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>&gt;</li>
+                  </ul>
+                </div>
+              </section>
+            </section>
+            <!-- restaurant end -->
+          </section>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
+

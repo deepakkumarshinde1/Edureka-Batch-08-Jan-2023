@@ -1,0 +1,49 @@
+.brand {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  color: red;
+  /* set e! center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-blue {
+  color: #192f60;
+}
+.edu-text-gray {
+  background-color: #fbfbfb !important;
+}
+.edu-restaurant-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 25%;
+}
+.page li {
+  width: 30px;
+  height: 30px;
+  /* center number */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 1.3rem;
+  border: gray 1px solid;
+  border-radius: 20%;
+}
+.page .active {
+  background-color: gray !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 576px) {
+  .edu-restaurant-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 25%;
+  }
+}

@@ -1,0 +1,25 @@
+/* 1400px (max) default */
+body {
+  background-color: red;
+}
+
+/* laptop size (1000px ) */
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* tablet size (800px ) */
+@media screen and (max-width: 800px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* laptop size (500px ) */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: purple;
+  }
+}
