@@ -46,4 +46,18 @@
     height: 80px;
     border-radius: 25%;
   }
+  .filter-po-up-parent {
+    position: relative; /* control absolute */
+  }
+
+  .filter-pop-up {
+    position: absolute; /* pic element form normal flow*/
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    left: 0px;
+    padding: 1.5rem;
+    top: 120%;
+    border: 1px solid rgb(175, 175, 175);
+    z-index: 1;
+  }
 }

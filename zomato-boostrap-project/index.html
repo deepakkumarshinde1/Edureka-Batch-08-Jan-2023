@@ -8,23 +8,65 @@
     <!-- enable responsive ness in our website -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./css/bootstrap/js/bootstrap.js"></script>
   </head>
   <body>
     <!-- fs-4  => font size  fs-1 ... fs-5 -->
     <div class="container-fluid">
       <!-- header start -->
-      <section class="row bg-danger py-lg-3 py-2">
+      <section class="row bg-danger">
+        <header class="col-12">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <p class="brand mb-0 fw-bold fs-4">e!</p>
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul
+                  class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end"
+                >
+                  <li class="nav-item">
+                    <button class="btn text-white">Login</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-outline-light">
+                      Create An Account
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </section>
+      <!-- <section class="row bg-danger py-lg-3 py-2">
         <header
           class="col-12 col-lg-11 m-auto text-white d-flex justify-content-between"
         >
-          <p class="brand mb-0 fw-bold fs-4">e!</p>
           <div>
             <button class="btn text-white">Login</button>
             <button class="btn btn-outline-light">Create An Account</button>
           </div>
         </header>
-      </section>
+      </section> -->
       <!-- header end -->
       <!-- 2nd section -->
       <section class="row edu-text-gray">
@@ -32,9 +74,18 @@
           <p class="text-blue h3 mt-3 fw-bold">Breakfast Places in Mumbai</p>
           <section class="row gap-3">
             <!-- filter start -->
-            <section class="col-lg-3 col-12 border border-1 p-2 px-4 bg-white">
-              <p class="text-blue fw-bold mb-0 d-lg-none">Filter/Sort</p>
-              <div class="d-none d-lg-block">
+            <section
+              class="filter-po-up-parent col-lg-3 col-12 border border-1 p-2 px-4 bg-white"
+            >
+              <p
+                class="text-blue fw-bold mb-0 d-lg-none d-flex justify-content-between"
+                data-bs-toggle="collapse"
+                data-bs-target="#filter"
+              >
+                <span>Filter/Sort</span>
+                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+              </p>
+              <div id="filter" class="d-lg-block collapse filter-pop-up">
                 <p class="text-blue fw-bold mb-2">Filter</p>
                 <div class="mb-3">
                   <label for="" class="form-label">Select Location</label>
@@ -153,6 +204,10 @@
                     >Price High To Low</label
                   >
                 </div>
+                <div class="text-center d-lg-none d-block">
+                  <hr />
+                  <button class="btn btn-primary">Apply Filter</button>
+                </div>
               </div>
             </section>
             <!-- filter end -->
@@ -169,11 +224,12 @@
                     <div>
                       <p class="h2 fw-bold text-blue">KFC</p>
                       <p class="text-success mb-2">
-                        START 4.5 <span class="fw-bold">(5k)</span>
+                        <i class="fa fa-star" aria-hidden="true"></i> 4.5
+                        <span class="fw-bold">(5k)</span>
                       </p>
                       <p class="text-muted">
-                        <span>Location</span> Shop 1, Plot D, Samruddhi Complex,
-                        Chincholi
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> Shop
+                        1, Plot D, Samruddhi Complex, Chincholi
                       </p>
                     </div>
                   </div>
@@ -241,4 +297,3 @@
     </div>
   </body>
 </html>
-
