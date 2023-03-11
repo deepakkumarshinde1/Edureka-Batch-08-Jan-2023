@@ -4,11 +4,11 @@
 // 2015 ( All class, Many new features added)(AngularIO (typescript) , 
 // react (Typescript/Javascript) , Veu)
 
-//---- Basic JAVA
+//---- Basic JavaScript
 
-// console
-// variables
-// operators
+// console *****
+// variables ****
+// operators ****
 // conditional statement
 // loop
 // array
@@ -19,3 +19,10 @@
 // DOM
 
 // Advance Javascript
+
+
+// we create a javascript by using .js
+// we create a react javascript by using .jsx 
+
+html top to bottom
+1st html ==> css => js
