@@ -9,9 +9,10 @@
 // console *****
 // variables ****
 // operators ****
-// conditional statement
-// loop
-// array
+// conditional statement ****
+// loop **** for, while, do while, for of , for in 
+// functions ****
+// array ****
 // object
 // math
 // date
