@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-section {
+  height: 70vh;
+  width: 100%;
+  background-color: #000000;
+  border: 10px solid #232323;
+  border-left: none;
+  border-right: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.left-section,
+.right-section {
+  /* border: 1px solid white; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-section {
+  position: relative;
+}
+.right-section > img {
+  /* width: 100%; */
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.right-section > video {
+  position: absolute;
+  height: 58%;
+}
