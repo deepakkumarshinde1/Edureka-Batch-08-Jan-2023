@@ -1,40 +1,25 @@
-// date methods
-// create a date => create object of Date Class
-var date = new Date();
+// set a text input to html on click button
 
-// get a perfect date
-var output = date.toDateString();
-console.log(output);
-// get a date
-var output = date.getDate();
-console.log(output);
+// How to get "input, select, textarea" data in javascript
+// from html ==>  we use a prop of input
+// element called ==> .value
 
-// get a month
-var months = ["Jan", "Feb", "Mar"];
-var output = date.getMonth(); // jan => 0 .. dec => 11
-console.log(months[output]);
+var input = document.querySelector("#text");
+var btn = document.querySelector("#btn");
+var h1 = document.querySelector("#change-text");
 
-// get a day
-var output = date.getDay(); // sun => 0 .. sat => 6
-console.log(output);
+btn.addEventListener("click", function () {
+  var text = input.value;
+  h1.innerHTML = text;
+  // reset input
+  input.value = "";
+});
 
-// get a year
-var output = date.getFullYear();
-console.log(output);
+input.addEventListener("keyup", function () {
+  var text = input.value;
+  h1.innerHTML = text;
+});
 
-// get current hrs
-var output = date.getHours(); // 24 hrs
-
-var hours = output >= 12 ? output - 12 : output;
-var meridiem = output >= 12 ? "pm" : "am";
-console.log(hours, output, meridiem);
-
-// get current min
-var output = date.getMinutes(); // 00 ... 59
-console.log(output);
-
-// get current sec
-var output = date.getSeconds(); // 00 ... 59
-console.log(output);
-
-// next step => setInterval() => counter or time
+// how get and set text
+// how to handel a event
+// get input text & set it in element
