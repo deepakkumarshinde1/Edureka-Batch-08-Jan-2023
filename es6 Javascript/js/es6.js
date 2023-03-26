@@ -1,38 +1,72 @@
 // 2005 ES5 ---> 2015(ES6) ---> 2023
 
-// const , let , var
-// template string
+// template string*
+
+// destructuring*
+// spread operators*
+// rest parameters*
+
 // class
-// destructuring
-// spread operators
-// rest parameters
 // function (arrow function)
-// hoisting
+// hoisting --> mentor
 // async javascript
 // ------promise (async await)
 // fetch
 
-// it avoid re-initialization of variable
-let text = "deepakkumar";
-text = 123;
+// class ==> oop (object oriented programming )
+// class is a instance of object
+// class is blue print of object
+// class is a collection of props & methods
 
-// data must constant
-const pie = 3.14;
-// console.log(pie);
+// alert(1);
 
-// var => function/local scope
-function funOne() {
-  var a = 10;
-  console.log(a);
-}
-funOne();
-// const & let ==> block scope and function/local scope
+// overrides the  original of alert
 
-function funTwo() {
-  for (let i = 0; i < 10; i++) {
-    console.log("hello");
+// props ===> variables
+// methods ==> function
+
+// if we want to a logic of class we need a object of class
+// 1st letter must be always capital
+// this ==> access prop and method in class
+// constructor is 1st method which get called on object creation
+class MyCLass {
+  //text = "hello"; // propriety
+  constructor(_text) {
+    this.text = _text;
+  }
+  alert() {
+    console.log(this.text);
+  } // methods
+} // class definition
+
+// create a object of class
+// new => create a object
+// MyCLass() => constructor
+let myCLass = new MyCLass("Welcome to edureka");
+//myCLass.alert();
+
+// let a = {
+//   abc:'value'
+// }
+
+// class inheritance
+// constructor => reserved method of javascript
+class Shape {
+  constructor(value) {
+    this.height = value;
+    this.width = value;
   }
 
-  console.log("var i=", i); // undefined, 10 , 9 , error
+  draw() {
+    console.log("Square is wxh", this.height * this.width);
+  }
 }
-funTwo();
+class Square extends Shape {}
+
+class Rectangle extends Shape {}
+
+let square = new Square(10);
+square.draw();
+
+let rectangle = new Rectangle(10, 20);
+rectangle.draw();
