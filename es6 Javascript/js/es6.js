@@ -34,3 +34,5 @@ getData();
 
 // fetch in return provides => response
 // response.json() => extract data from response object
+
+// generator's , closures function, super keyword
