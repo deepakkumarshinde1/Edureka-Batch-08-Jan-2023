@@ -1,0 +1,27 @@
+Need of Node JS ?
+    # Help us to a javascript without a browser
+    # Node js Async in nature and ist after 
+
+For What we can use node js ?
+    # Create Web Application (server + client)
+    # Create Server Application (server API)
+    # Create Desktop Application (VS Code)
+    # Create Mobile Application (Angular , React, IONIC)
+    # Create Front End Application (Angular, Vue, React )
+
+How Node JS runs? 
+    # Javascript ==> JS Engine (in chrome V8)
+    # Node JS product ofg Google
+    # V8 product ofg Google
+    # Also have some C++
+
+What Node JS ?
+    # Node is Runtime Environment For JAVAscript
+    # Node also it can act like a server 
+
+What is different Node JS Server and Other Server (Apache or Nginx or IIS) ?
+    # Node JS Server Only Support for Javascript js files to serve
+    # Other serves can server files of JAVA , PHP , C# ,Python
+
+Run a js code over Node JS 
+    node fileName.js
