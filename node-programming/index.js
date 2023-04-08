@@ -48,3 +48,6 @@ const server = http.createServer((request, response) => {
 server.listen(3000, () => {
   console.log("server started on prot 3000");
 });
+
+// function abc(){}
+// ()=>{} [expression , callback]
