@@ -25,3 +25,35 @@ What is different Node JS Server and Other Server (Apache or Nginx or IIS) ?
 
 Run a js code over Node JS 
     node fileName.js
+
+
+Create a Javascript Application (without a browser) ==> Node JS
+Express => Framework for Node JS
+
+# http => create a server
+# url => parse/tokenizing url
+# fs => read file
+
+
+http + url + fs + routing === express (MVC)
+
+
+Work with 3rd party module ==> 
+    project configuration ==> package.json
+    package.json ==> project meta file
+                name => 
+                version=>
+                which are package/module our project need
+                start command
+    
+    work with package.json file ==> cli (command line interface)
+        called as npm
+        npm ==> node package manager
+            # what npm do
+                # create a package.json
+                # add 3rd party module 
+                # remove 3rd party module 
+                # update 3rd party module
+                # run our project
+
+    https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-npm-and-basic-npm-commands-18aa16f69f6b
