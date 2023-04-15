@@ -1,0 +1,35 @@
+express <========= REST API (json) ========> React APP
+            REST API 
+            API => application programming interface
+            REST => representational state transfer
+
+            SOAP => XML (Extensible Markup Language)
+            REST ==> HTTP Protocol
+            rest api ==> JSON , XML , Plan Text , HTML
+                    server <=========> client
+
+
+test api =>
+        GET (cache of http) , POST (http body), PUT , DELETE
+        manual testing api tool (POSTMAN application)
+
+        GET => collect a data 
+        POST => create (file upload) 
+        PUT ==> update
+        DELETE ==> delete
+
+zomato application OUR API
+    GET /location-list
+    GET /restaurant-list
+    GET /meal-type-list
+
+MVC ==> 
+Controller ==> handel functionality
+Model ==> having a data or connected db operators
+View (React JS) => HTML + CSS + JS(browser)
+
+module ==> node js
+model => db operators
+modal ==> bootstrap pop-up
+
+
