@@ -1,0 +1,11 @@
+{
+  "name": "edureka-project",
+  "version": "0.1.0",
+  "description": "sample project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "edureka admin",
+  "license": "ISC"
+}

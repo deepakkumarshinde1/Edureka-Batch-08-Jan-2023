@@ -1,0 +1,29 @@
+3rd party modules like express , react etc
+npmjs.com
+npm => Node Package Manager
+    npm -v ==> check version
+    npm init ==> create package.json ( handel our project & 3rd  party module our project)
+    npm i <package> ==> install the package in your project directory
+    npm un <package> ==> uninstall the package from your project directory
+
+    npm i nodemon -g ==> install the package in global directory
+
+# Express is a minimal and flexible Node.js web application framework.
+# It work over node js
+# Build with javascript
+    # in-build routing 
+    # work with or without MVC  (Mode View Controller)
+    # we can modules for code
+    # express js connect with sql or no-sql databases
+    # minimal line of code build server application
+    # share css,html,js file 
+    # session & cookies
+    # supports many rendering engine (create dynamic pages)
+    # simple test, upgrade and manage application 
+
+    # only one entry => "app.js" , index.js , server.js
+        # app.js ==> 
+            create a express server
+
+    
+    # nodemon
