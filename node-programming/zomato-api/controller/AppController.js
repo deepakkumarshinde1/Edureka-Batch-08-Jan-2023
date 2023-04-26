@@ -1,4 +1,4 @@
-const locationList = require("../model/AppModel.json");
+const LocationsModel = require("../model/LocModel");
 
 module.exports.getHomePage = (request, response) => {
   response.send("Welcome to zomato server");
@@ -8,17 +8,33 @@ module.exports.postHomePage = (request, response) => {
   response.send("Welcome to post");
 };
 
-module.exports.getLocationList = (request, response) => {
-  // as we want to send a data to client we need a json
-  // json => javascript object notation
-  //   let status = locationList.length === 0 ? false : true;
+module.exports.getLocationList = async (request, response) => {
+  // get list
+  try {
+    let locationList = await LocationsModel.find(); // get record from mongoDB
+    let jsonData = {
+      status: locationList.length === 0 ? false : true,
+      locationList: locationList,
+    };
+    response.status(200).send(jsonData);
+  } catch (error) {
+    response.status(500).send("database error");
+  }
+};
+
+module.exports.searchLocation = (request, response) => {
+  // collect a dynamic data from url ==> request.params
+  let params = request.params; // {city:mumbai}
+  // filter
+  let list = locationList.filter((location) => {
+    return location.city === params.city;
+  });
+
   let jsonData = {
-    status: locationList.length === 0 ? false : true,
-    locationList: locationList,
+    searchList: list,
   };
   response.send(jsonData);
 };
-
 // app.js
 // home page ==> /
 // controller ==> all function which controls your app
