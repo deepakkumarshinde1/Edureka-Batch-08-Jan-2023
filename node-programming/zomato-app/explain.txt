@@ -193,12 +193,12 @@ Restaurants Controller
         **GET /get-restaurant-list-by-location-id
         **GET /get-restaurant-details-by-restaurant-id
         **GET /get-menu-items-by-restaurant-id
-        POST /filter (50%)
+        POST /filter (50%) 3rd-may-2023
 
 MealType Controller
-        GET /get-meal-type
+        **GET /get-meal-type
    
 
-PaymentController
+PaymentController (React JS)
         POST /payment
                POST/ save order
