@@ -1,0 +1,79 @@
+What is react js ?
+    ==> Front End Library (set of functions)
+    ==> User Interface (UI) react
+
+Who alternative for react?
+    ==> Angular ,Vue
+
+Why very popular ?
+    ==> Simple to code.
+    ==>* Create App => Javascript or Typescript
+    ==>* Create App ==> Class or Function
+    ==> Upgrade ==> v1 ==> v2 ==> its very easy (virtual DOM )
+    ==> Testing very easy
+
+How create a react application ?
+    => npx create-react-app app-name
+
+    => npx Node Package Execute (runtime ==> install ==> runs ===> uninstall package)
+    => npm Node Package Manager (install , uninstall , update)
+    => 25% base ==> 75% our project
+
+Installing 
+    react => Main Library
+    react-dom (browser) =>  (handel virtual DOM)
+   
+    react-scripts => start (dev) , build (prod) , test application (unit & integrated)
+
+     with cra-template. (cra create-react-app)
+
+
+Development ==> Node ==> dev server
+
+Directory Structure
+    Public
+        favicon
+        index.html
+        images
+        robots.txt
+
+    SRC ==> Main Development
+        *.css
+        *.js
+        fonts folder
+        backImage 
+
+How is works ?
+    ==> main entry of react app is index.js
+
+    ==> RDOM ==> root html page ==> html
+
+    ==> index ==> App.js ==> All project\
+    ==> index.js => entry file
+
+    ==> App.js ==> component
+
+What are component ?
+    # component are basic building block of application
+
+
+    App.js
+        Navigation
+            Nav
+        MainSection
+            Section
+            Header
+        Footer
+            Footer
+
+    # component
+        function (max)
+        class
+
+        We write a html like code called as JSX
+        JSX => Javascript XML
+
+        Rules JSX
+            in return it must have only one parent
+            <> ==> JSX fragment
+            {} ==> JSX expression (write js code)
