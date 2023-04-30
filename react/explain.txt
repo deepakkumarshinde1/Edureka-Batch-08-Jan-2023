@@ -77,3 +77,54 @@ What are component ?
             in return it must have only one parent
             <> ==> JSX fragment
             {} ==> JSX expression (write js code)
+
+*************** React Day-2 **************
+:: class component < v16.8 > function component
+:: form v16.8 ==> hooks function ==> function which performs complex task like class logic
+:: we can't hooks in class component
+:: we can hooks only functional component
+:: hooks function/method start with "use"
+
+# state 
+    # handel data inside a component we use state
+    # When states changes component re-run
+    # v18 state in side function
+    # use state functional component we hooks
+    # hook ==> useState
+
+# how to use useState ?
+    # perform the operation of state in function component
+    # useState ==> hook function
+    # in return gives an array 
+    # array has 2 value 
+    # [value , updateFunction]
+    # update a state we need to create new copy of state
+    # updateFunction can create new copy for state
+    # inside useState() we pass 
+        :: number, string, object , boolean , array
+
+# props
+    # props to send data form parent to child
+    # they are like attributes which we can pass in component
+    # props are readonly in nature
+
+# if else
+    ternary operators
+    (condition)  ? true : false;
+
+# react component life
+    initialization ==> memory allocation
+    load ==> mounting (only once)
+        ==> i want data from server 
+
+    update ==> updating ( again and again)
+        ==> i send data to server
+
+    unload (remove) ==> unmounting (only once)
+        ==> inform parent component
+
+    # useEffect( cbFn , [stateName]   )
+    # useEffect runs on side-effect/changes of component
+        
+
+# loop
