@@ -1,0 +1,46 @@
+    Convert ==> HTML+CSS +Bootstrap to react
+
+    # set bootstrap to react 
+        copy CDN link and paste in html  
+    # remove App.css 
+    # clean index.css
+    # copy all images in public folder
+    # background images need to copy in src folder
+    # copy css in src folder
+    # copy html code to component
+    # change class to className
+    # change label for attribute to htmlFor
+
+Traditional Web application
+    # for very new page , entire code is reloaded i.e requesting from serve
+    https://getbootstrap.com/
+
+Single Page Application
+    React Application 
+    # only a portion of a page is change by javascript
+    # achieve a single page application with browser history
+    # we need a package 
+        called as react-router-dom (v6) ==> 6.9
+
+            components
+                **BrowserRouter ==> set/enable  a routing in application 
+                **Routes ==> Collect Route
+                **Route ==> set routing per as per component
+                **Link ==> a(href="#")
+                    <Link to="/search">Quick Searches</Link>
+                NavLink
+                Outlet
+                *Navigate ==> redirecting
+
+            hooks
+                *useParams ==> read dynamic url url /:city /:location
+                *useNavigate ==> to navigate form javascript
+                useParamsString
+
+
+# Who to call a server data
+    fetch
+    axios
+
+
+

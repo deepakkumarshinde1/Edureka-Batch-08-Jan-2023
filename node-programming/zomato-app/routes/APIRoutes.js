@@ -24,4 +24,6 @@ APIRoutes.get(
 );
 
 APIRoutes.get("/api/get-meal-type-list", mealType.getMealTypeList);
+
+APIRoutes.post("/api/filter", restaurant.filter);
 module.exports = APIRoutes;
