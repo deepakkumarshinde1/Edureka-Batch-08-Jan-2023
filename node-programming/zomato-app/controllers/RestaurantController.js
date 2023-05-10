@@ -74,6 +74,7 @@ module.exports.filter = async (request, response) => {
       filter["min_price"] = { $lt: hCost, $gt: lCost };
     }
 
+    // -1 dec , 1 asc
     console.log(filter);
 
     let RestaurantList = await RestaurantModel.find(filter).sort({

@@ -39,8 +39,14 @@ Single Page Application
 
 
 # Who to call a server data
-    fetch
-    axios
+    fetch ==> 
+    axios ==>
+        axios.get()
+        axios.put()
+        axios.post()
+        axios.delete()
 
+# complete home page API
+# filter/search page
 
 
