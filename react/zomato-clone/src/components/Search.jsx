@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Search = (props) => {
   let { locationList } = props;
   let { id, name } = useParams();
+  let navigate = useNavigate();
 
   let [filterData, setFilterData] = useState({
     mealType: id,
@@ -255,7 +256,11 @@ const Search = (props) => {
               ) : (
                 restaurants.map((restaurant, index) => {
                   return (
-                    <div key={index} className="col-12 food-shadow p-4 mb-4">
+                    <div
+                      onClick={() => navigate("/restaurant/" + restaurant._id)}
+                      key={index}
+                      className="col-12 food-shadow p-4 mb-4"
+                    >
                       <div className="d-flex align-items-center">
                         <img
                           src="/images/food-item.png"

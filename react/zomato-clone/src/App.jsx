@@ -28,7 +28,7 @@ function App() {
           path="/search/:id/:name"
           element={<Search locationList={locationList} />}
         />
-        <Route path="/restaurant" element={<Restaurant />} />
+        <Route path="/restaurant/:id" element={<Restaurant />} />
       </Routes>
     </>
   );

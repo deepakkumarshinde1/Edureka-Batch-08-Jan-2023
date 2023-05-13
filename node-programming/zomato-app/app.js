@@ -8,7 +8,7 @@ const PORT = 3001;
 
 // post data disabled , to make it enabled
 // body perse
-app.use(cors());
+app.use(cors()); // 3001 ===> 3000
 // enable all incoming json
 app.use(express.json());
 
