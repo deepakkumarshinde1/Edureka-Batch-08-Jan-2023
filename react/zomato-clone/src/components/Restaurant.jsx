@@ -12,6 +12,7 @@ const Restaurant = () => {
   // user details
   const [name, setName] = useState("Deepakkumar");
   const [email, setEmail] = useState("deepakkumar@gmail.com");
+  const [mobile, setMobile] = useState("9999999999");
   const [address, setAddress] = useState("Swargate , Pune");
 
   let getRestaurantDetails = async () => {
@@ -44,6 +45,71 @@ const Restaurant = () => {
     let newTotal = total - _menuItemList[index].price;
     setTotal(newTotal);
     setMenuItemList(_menuItemList);
+  };
+
+  let makePayment = async () => {
+    // hit order details api
+    let url = "http://localhost:3001/api/gen-order-details";
+    let { data } = await axios.post(url, { amount: total });
+
+    if (data.status === false) {
+      alert("Unable to create order details");
+      return false;
+    }
+    let { order } = data;
+    var options = {
+      key: "rzp_test_RB0WElnRLezVJ5", // Enter the Key ID generated from the Dashboard
+      amount: order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+      currency: order.currency,
+      name: "Edureka Zomato Clone",
+      description: "Online Food Delivery",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/b/bb/Square_zomato_logo_new.png?20180511061014",
+      order_id: order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      handler: async (response) => {
+        let userOrders = menuItemList.filter((menu_item) => {
+          return menu_item.qty > 0;
+        });
+
+        let sendData = {
+          pay_id: response.razorpay_payment_id,
+          order_id: response.razorpay_order_id,
+          signature: response.razorpay_signature,
+          orders: userOrders,
+          name: name,
+          email: email,
+          contact: mobile,
+          address: address,
+          totalAmount: total,
+          rest_id: rDetails._id,
+          rest_name: rDetails.name,
+        };
+
+        let url = "http://localhost:3001/api/verify-payment";
+        let { data } = await axios.post(url, sendData);
+        if (data.status === true) {
+          alert("Payment done successfully");
+        } else {
+          alert("Payment Fail, try again.");
+        }
+      },
+      prefill: {
+        name: name,
+        email: email,
+        contact: mobile,
+      },
+    };
+    var razorpay = new window.Razorpay(options);
+    razorpay.on("payment.failed", function (response) {
+      alert(response.error.code);
+      alert(response.error.description);
+      alert(response.error.source);
+      alert(response.error.step);
+      alert(response.error.reason);
+      alert(response.error.metadata.order_id);
+      alert(response.error.metadata.payment_id);
+    });
+    razorpay.open(); // payment window of Razorpay
   };
 
   useEffect(() => {
@@ -243,7 +309,9 @@ const Restaurant = () => {
               >
                 Back
               </button>
-              <button className="btn btn-success">PROCEED</button>
+              <button className="btn btn-success" onClick={makePayment}>
+                Make Payment
+              </button>
             </div>
           </div>
         </div>
