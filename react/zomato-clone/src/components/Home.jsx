@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Header from "./Header";
 
 const Home = (props) => {
   // let getLocationList = async () => {
@@ -27,15 +28,8 @@ const Home = (props) => {
   return (
     <>
       <main className="container-fluid">
-        <section className="row main-section align-content-start">
-          <header className="col-12 py-3">
-            <div className="container d-lg-flex justify-content-end d-none">
-              <button className="btn text-white me-3">Login</button>
-              <button className="btn text-white border border-white">
-                Create an account
-              </button>
-            </div>
-          </header>
+        <section className="row main-section align-content-start justify-content-center">
+          <Header logo={false} user={props.user} />
           <section className="col-12 d-flex flex-column align-items-center justify-content-center">
             <p className="brand-name fw-bold my-lg-2 mb-0">e!</p>
             <p className="h1 text-white my-3 text-center">

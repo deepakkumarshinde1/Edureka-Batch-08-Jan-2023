@@ -64,7 +64,7 @@ let saveOrder = async (data) => {
     pay_id: data.pay_id,
     order_id: data.order_id,
     signature: data.signature,
-    orders: data.order,
+    orders: data.orders,
     name: data.name,
     email: data.email,
     contact: data.contact,

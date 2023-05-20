@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import Header from "./Header";
 
 const Search = (props) => {
   let { locationList } = props;
@@ -62,16 +63,7 @@ const Search = (props) => {
     <>
       <div className="container-fluid">
         <div className="row bg-danger justify-content-center">
-          <div className="col-10 d-flex justify-content-between py-2">
-            <p className="m-0 brand">e!</p>
-            <div>
-              <button className="btn text-white">Login</button>
-              <button className="btn btn-outline-light">
-                <i className="fa fa-search" aria-hidden="true"></i>Create a
-                Account
-              </button>
-            </div>
-          </div>
+          <Header user={props.user} />
         </div>
         {/* <!-- section --> */}
         <div className="row">

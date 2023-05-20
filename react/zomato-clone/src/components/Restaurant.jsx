@@ -1,8 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+import Header from "./Header";
 
-const Restaurant = () => {
+const Restaurant = (props) => {
   let { id } = useParams();
   const [rDetails, setrDetails] = useState({}); // {cousine:[]}
   // to store menu list
@@ -10,8 +13,8 @@ const Restaurant = () => {
   const [total, setTotal] = useState(0);
 
   // user details
-  const [name, setName] = useState("Deepakkumar");
-  const [email, setEmail] = useState("deepakkumar@gmail.com");
+  const [name, setName] = useState(props.user ? props.user.name : "");
+  const [email, setEmail] = useState(props.user ? props.user.email : "");
   const [mobile, setMobile] = useState("9999999999");
   const [address, setAddress] = useState("Swargate , Pune");
 
@@ -119,7 +122,7 @@ const Restaurant = () => {
   return (
     <>
       {/* modal */}
-      {/* <div
+      <div
         className="modal fade"
         id="slideShow"
         tabIndex="-1"
@@ -129,19 +132,21 @@ const Restaurant = () => {
         <div className="modal-dialog modal-lg " style={{ height: "75vh " }}>
           <div className="modal-content">
             <div className="modal-body h-75">
-              {/* <Carousel showThumbs={false} infiniteLoop={true}>
-                {rDetails.thumb.map((value, index) => {
-                  return (
-                    <div key={index} className="w-100">
-                      <img src={"/images/" + value} />
-                    </div>
-                  );
-                })}
-              </Carousel> *
+              {rDetails.thumb ? (
+                <Carousel showThumbs={false} infiniteLoop={true}>
+                  {rDetails.thumb.map((value, index) => {
+                    return (
+                      <div key={index} className="w-100">
+                        <img src={"/images/" + value} />
+                      </div>
+                    );
+                  })}
+                </Carousel>
+              ) : null}
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* menu item modal */}
       <div
@@ -319,16 +324,7 @@ const Restaurant = () => {
 
       <div className="container-fluid">
         <div className="row bg-danger justify-content-center">
-          <div className="col-10 d-flex justify-content-between py-2">
-            <p className="m-0 brand">e!</p>
-            <div>
-              <button className="btn text-white">Login</button>
-              <button className="btn btn-outline-light">
-                <i className="fa fa-search" aria-hidden="true"></i>Create a
-                Account
-              </button>
-            </div>
-          </div>
+          <Header user={props.user} />
         </div>
         {/* <!-- section -->  */}
         <div className="row justify-content-center">
@@ -353,15 +349,16 @@ const Restaurant = () => {
                     <li>Overview</li>
                     <li>Contact</li>
                   </ul>
-                  <a
+                  <button
                     className="btn btn-danger align-self-start"
                     data-bs-toggle="modal"
                     href="#modalMenuItem"
                     role="button"
                     onClick={getMenuItems}
+                    disabled={props.user ? false : true}
                   >
-                    Menu Items
-                  </a>
+                    {props.user ? "Menu Items" : "Login For Menu"}
+                  </button>
                 </div>
                 <hr className="mt-0" />
 
